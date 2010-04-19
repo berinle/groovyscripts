@@ -14,8 +14,8 @@ log.info 'Initialize SQL'
 def uname = args[0]
 def pass = args[1]
 
-def sql = Sql.newInstance('jdbc:mysql://localhost/cbp', 'com.mysql.jdbc.Driver')
+def sql = Sql.newInstance('jdbc:mysql://localhost/cbp', uname, pass, 'com.mysql.jdbc.Driver')
 
-log.info 'Got sql connection ${sql}'
+log.info "Got sql connection ${sql}"
 
-log.info 'auto commit status: ${sql.autoCommit}'
+log.info "auto commit status: ${sql.connection.autoCommit}"

@@ -3,3 +3,5 @@ Random thoughts on groovy
 HISTORY LOG
 ===========
 Added sample code to try out @GrabConfig. This makes puts dependencies on the system classloader as opposed to the script classpath when using @Grab
+
+*Note @GrabConfig only works with groovy version 1.7.1+
